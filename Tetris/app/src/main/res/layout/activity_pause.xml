@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxim.tetris.Pause"
+    android:weightSum="10">
+    <LinearLayout android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/actual_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="14"
+        android:background="#80A9A9A9">
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Pause"
+            android:textColor="@color/black"
+            android:textAlignment="center"/>
+        <Button android:text="Resume"
+            android:id="@+id/resume_btn"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:layout_height="0dp" />
+        <Button android:text="Restart"
+            android:id="@+id/restart_btn"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:layout_height="0dp" />
+        <Button android:text="Main menu"
+            android:id="@+id/menu_btn"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

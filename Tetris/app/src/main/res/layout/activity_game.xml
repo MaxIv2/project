@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maxim.tetris.Game"
+    android:weightSum="8">
+    <RelativeLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:id="@+id/game_block"
+        android:layout_weight="6">
+    </RelativeLayout>
+    <LinearLayout android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="10">
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| |"
+            android:id="@+id/pause_btn"/>
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/initial_score"
+            android:id="@+id/score_holder"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/next0"/>
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/next1"/>
+        <ImageView android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/next2"/>
+        <Button android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Drop"
+            android:id="@+id/drop_btn"
+            android:layout_weight="2"/>
+        <Button android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/rotate_right_btn"
+            android:text="Right" />
+    </LinearLayout>
+
+</LinearLayout>

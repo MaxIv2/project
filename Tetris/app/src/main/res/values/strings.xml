@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tetris!</string>
+    <string name="start">Start</string>
+    <string name="initial_score">0</string>
+    <string name="over_dialog">Game Over!></string>
+    <string name="restart">Restart</string>
+    <string name="menu">Main Menu</string>>
+</resources>
